@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let seconds = 0;
     
     // Emoji da utilizzare come simboli delle carte
-    const symbols = ['🍎', '🍌', '🍒', '🍓', '🍋', '🥝', '🍉', '🥭];
+    const symbols = ['😓', '🥸', '😅', '😵‍💫', '🫥', '🫨', '🍉', '🥭','👺','🫠','🤔','😯'];
     
     // Inizializza il gioco
     function initGame() {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Aggiorna l'interfaccia
         movesElement.textContent = '0 Mosse';
-        timerElement.textContent = 'Tempo: 0s';
+        timerElement.textContent = 'Tempo: 0ms';
         
         // Ferma il timer se è in esecuzione
         clearInterval(timerInterval);
@@ -155,9 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Avvia il timer
     function startTimer() {
         timerInterval = setInterval(() => {
-            seconds++;
-            timerElement.textContent = `Tempo: ${seconds}s`;
-        }, 1000);
+            seconds= seconds + 10;
+            timerElement.textContent = `Tempo: ${seconds}ms`;
+        }, 10);
     }
     
     // Gestisce il click sul pulsante di restart
