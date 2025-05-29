@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let seconds = 0;
     
     // Emoji da utilizzare come simboli delle carte
-    const symbols = ['😓', '🥸', '😅', '😵‍💫', '🫥', '🫨', '🍉', '🥭','👺','🫠','🤔','😯'];
+    const symbols = ['😓', '🥸', '😅', '😵‍💫', '🫥', '🫨', '🍉', '🥭','👺','🫠','🤔','😯', 'O', 'B','K', 'L', 'M', 'P'];
     
     // Inizializza il gioco
     function initGame() {
